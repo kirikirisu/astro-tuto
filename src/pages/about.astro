@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css"
 
@@ -43,7 +43,7 @@ const textTransform = "uppercase";
     </style>
 	</head>
     <body>
-      <Navigation />
+      <Header />
       <h1>My Astro Site</h1>
       <h1>{pageTitle}</h1>
       <h2>... and my new Astro site!</h2>
@@ -69,5 +69,8 @@ const textTransform = "uppercase";
 
       {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
       <Footer />
+      <script>
+        import "../scripts/menu.js"
+      </script>
     </body>
 </html>
